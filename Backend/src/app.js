@@ -20,7 +20,7 @@ app.get('*', (req, res) => {
 });
 
 const corsOptions = {
-    origin: 'https://todo-app-nine-lovat-94.vercel.app',
+    origin: 'todo-app-git-main-rewan-adels-projects.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
     optionsSuccessStatus: 200 
