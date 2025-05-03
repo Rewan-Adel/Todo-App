@@ -19,12 +19,23 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
 
-const corsOptions = {
-    origin: 'todo-app-git-main-rewan-adels-projects.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://todo-app-git-main-rewan-adels-projects.vercel.app'
+  ];
+  
+  const corsOptions = {
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
     credentials: true,
-    optionsSuccessStatus: 200 
-};
+    optionsSuccessStatus: 200
+  };
+  
 app.use(cors(corsOptions));
 app.use(helmet());
 app.use(bodyParser.json());
