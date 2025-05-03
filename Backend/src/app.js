@@ -20,7 +20,7 @@ app.get('*', (req, res) => {
 });
 
 const corsOptions = {
-    origin: 'http://localhost:5173/',
+    origin: 'https://todo-app-nine-lovat-94.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
     optionsSuccessStatus: 200 

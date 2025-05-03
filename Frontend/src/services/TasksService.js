@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = 'http://localhost:8000/api';
+const API_URL = 'https://todo-app-nine-lovat-94.vercel.app/api';
 
 export const getTasks = async (token) => {
     try {
