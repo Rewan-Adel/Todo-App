@@ -1,0 +1,111 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f9fafb; */
+    padding: 1rem;
+  }
+  
+  .signup-card {
+    width: 100%;
+    max-width: 550px;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card-header {
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+  }
+  
+  .card-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-header p {
+    color: #6b7280;
+    font-size: 1rem;
+  }
+  
+  .card-content {
+    padding: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    gap: 1rem; /* optional spacing between label and input */
+  }
+  
+  .form-group label {
+    width: 120px; /* adjust as needed */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0; /* remove default spacing */
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 0.62rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #111827;
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out;
+  }
+  
+
+  .signup-button {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .signup-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .card-footer {
+    padding: 1.5rem 2rem 2rem;
+    text-align: center;
+  }
+  
+  .card-footer p {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .login-link {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+  }
+  

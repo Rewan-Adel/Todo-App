@@ -1,0 +1,26 @@
+.filter-button {
+    background-color: transparent;
+    color: #f3f3f3;
+    padding: 0.3em 1em;
+    margin-left: 30px;
+  }
+  
+  .filter-button.active {
+    background-color: #2563eb;
+    color: white;
+    /* border-bottom: 3px solid #000; */
+    font-weight: bold;
+    /* color: #e0e0e0; */
+
+  }
+  @media (max-width: 768px) {
+  .filter-button {
+    margin-left: 10px;
+    padding: 0.4em 0.8em;
+    font-size: 0.9rem;
+  }
+
+  .filter-button.active {
+    font-size: 1rem;
+  }
+}

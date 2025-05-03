@@ -1,0 +1,12 @@
+.task-title{
+    padding: 10px 5px;
+}
+
+.task-desc{
+    padding: 10px 120px;
+}
+
+.task-title, .task-desc{
+    border-radius: 5px;
+    text-align: center;
+}
